@@ -1,0 +1,32 @@
+.form-flex-container {
+    display: flex;
+    width: 100vw;
+    margin-top: 19vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__googleLogo {
+    font-size: 90px;
+    margin: 0vh 0vw;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.form__input {
+    border-color: #979797;
+    border-radius: 25px;
+    width: 30%;
+    padding-left: 2vw;
+    height: 4.7vh;
+    margin-top: 28px;
+}
+.form__button-container {
+    margin-top: 30px;
+}
+.form__button {
+    background-color: #383838;
+    border-radius: 5px;
+    border-style: none;
+    margin: 0 6px;
+    padding: 10px;
+}
