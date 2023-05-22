@@ -12,6 +12,7 @@
     font-weight: 100;
     font-family: sans-serif;
 }
+
 .form__input {
     border-color: #595959;
     border-radius: 25px;
@@ -22,6 +23,23 @@
     height: 4.7vh;
     margin-top: 28px;
 }
+.form__input-img {
+    position: absolute;
+    margin: 65px 0 0 0;
+}
+:root { --img-size: 20px; }
+.form__input-img-mag-glass {
+    height: 15px;
+    margin-right: 460px;
+}
+.form__input-img-mic {
+    height: var(--img-size);
+    margin-right: 10px;
+}
+.form__input-img-camera {
+    height: var(--img-size);
+}
+
 .form__button-container {
     margin-top: 30px;
 }
