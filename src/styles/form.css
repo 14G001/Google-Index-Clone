@@ -13,8 +13,10 @@
     font-family: sans-serif;
 }
 .form__input {
-    border-color: #979797;
+    border-color: #595959;
     border-radius: 25px;
+    border-style: double;
+    border-width: 1px;
     width: 30%;
     padding-left: 2vw;
     height: 4.7vh;

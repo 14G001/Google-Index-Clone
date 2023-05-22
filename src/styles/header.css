@@ -1,12 +1,26 @@
 .top-nav-container {
     display: flex;
     justify-content: right;
-    height: 5vh;
+    height: 60px;
+    margin-right: 10px;
     font-size: 14px;
 }
 .top-nav__item {
     display: inline;
     line-height: 3.2;
-    padding: 10px;
+    margin: auto 0;
+    margin-right: 10px;
     text-decoration: none;
+}
+.top-nav__img-options {
+    width: 16px;
+    height: 16px;
+    margin: auto 0;
+    margin-left: 20px;
+}
+.top-nav__img-profile {
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+    margin-left: 18px;
 }
