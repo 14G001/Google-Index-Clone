@@ -1,7 +1,7 @@
 .form {
     display: flex;
     width: 100vw;
-    margin-top: 18vh;
+    margin-top: 18.2vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,13 +13,14 @@
     font-family: sans-serif;
 }
 
+
 .form__input {
     border-color: #595959;
     border-radius: 25px;
     border-style: double;
     border-width: 1px;
-    width: 570px;
-    height: 50px;
+    width: 590px;
+    height: 47px;
     margin-top: 28px;
 }
 .form__input-img {
@@ -29,23 +30,25 @@
 :root { --img-size: 20px; }
 .form__input-img-mag-glass {
     height: 15px;
-    margin-right: 460px;
+    margin-right: 470px;
 }
 .form__input-img-mic {
     height: var(--img-size);
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .form__input-img-camera {
     height: var(--img-size);
 }
 
+
 .form__button-container {
     margin-top: 30px;
 }
 .form__button {
+    font-size: 14px;
     background-color: #383838;
     border-radius: 5px;
     border-style: none;
-    margin: 0 6px;
-    padding: 10px;
+    margin: 0 3px;
+    padding: 10px 17px;
 }
