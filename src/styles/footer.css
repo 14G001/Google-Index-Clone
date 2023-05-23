@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
     display: flex;
     flex-direction: column;
     height: 5vh;
@@ -12,6 +12,8 @@
     padding-left: 30px;
     width: 100vw;
 }
+
+
 .footer__contact {
     display: flex;
     margin-top: 5px;

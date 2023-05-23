@@ -1,14 +1,14 @@
-.form-flex-container {
+.form {
     display: flex;
     width: 100vw;
-    margin-top: 19vh;
+    margin-top: 18vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form__googleLogo {
+.form__google-logo {
     font-size: 90px;
-    margin: 0vh 0vw;
+    margin: 0;
     font-weight: 100;
     font-family: sans-serif;
 }
@@ -18,9 +18,8 @@
     border-radius: 25px;
     border-style: double;
     border-width: 1px;
-    width: 30%;
-    padding-left: 2vw;
-    height: 4.7vh;
+    width: 570px;
+    height: 50px;
     margin-top: 28px;
 }
 .form__input-img {
