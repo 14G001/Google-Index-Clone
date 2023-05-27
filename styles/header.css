@@ -1,21 +1,23 @@
-.top-nav-container {
+.top-nav {
     display: flex;
     justify-content: right;
     height: 60px;
-    font-size: 14px;
+    font-size: 12.5px;
 }
+
 
 .top-nav__links {
     margin: auto 0;
 }
 .top-nav__item {
     margin: auto 0;
-    margin-right: 10px;
+    margin-right: 12px;
     text-decoration: none;
 }
 .top-nav__item:hover {
     text-decoration: underline;
 }
+
 
 .top-nav__menu {
     display: flex;
@@ -38,13 +40,16 @@
     width: 40px;
 }
 .top-nav__img-options {
-    background-color: #00000000; /*Necessary to make transparent image parts make detected as transparent by browser (rrggbbAA).*/
+    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 16px;
 }
 .top-nav__img-space {
     margin-right: 5px;
 }
 .top-nav__img-profile {
-    background-color: #00000000; /*Necessary to make transparent image parts make detected as transparent by browser (rrggbbAA).*/
+    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 35px;
+}
+.top-nav__margin-right {
+    margin-right: 15px;
 }

@@ -1,6 +1,6 @@
 * {
     color: #ffffff;
-    background-color: #1a1a1e;
+    background-color: #222226;
     font-family: Arial;
 }
 
@@ -11,8 +11,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 95.3%;
-    min-width: 82%;
+    min-height: 100vh;
 }
   
 footer {
