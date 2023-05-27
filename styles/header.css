@@ -26,11 +26,6 @@
 }
 
 
-:root {
-    --shadow-color: #353535;
-    --desc-bg-color: #494949;
-    --desc-show-delay: 0.5s
-}
 #top-nav__menu-apps {
     display: flex;
     height: 40px;
@@ -38,11 +33,38 @@
     justify-content: center;
     align-items: center;
 }
-#top-nav__menu-apps:hover {
+#top-nav__menu-apps:focus-within .top-nav__menu-apps-desc{
+    visibility: hidden;
+}
+#top-nav__menu-apps:focus-within #menu-apps{
+    visibility: visible;
+}
+
+:root {
+    --shadow-color: #353535;
+    --desc-bg-color: #494949;
+    --desc-show-delay: 0.5s
+}
+.top-nav__menu-apps-button {
+    border: none;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.top-nav__menu-apps-button:hover {
     border-radius: 20px;
     box-shadow: 0 0 0 1px var(--shadow-color);
     background-color: var(--shadow-color);
 }
+.top-nav__menu-apps-button:focus .top-nav__menu-apps-desc{
+    visibility: hidden;
+}
+#top-nav__menu-apps .top-nav__menu-apps-button:focus #menu-apps{
+    visibility: visible;
+}
+
 .top-nav__menu-apps-img {
     background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 16px;
@@ -58,7 +80,7 @@
     border-radius: 5px;
     visibility: hidden;
 }
-#top-nav__menu-apps:hover .top-nav__menu-apps-desc{
+.top-nav__menu-apps-button:hover .top-nav__menu-apps-desc{
     transition: visibility;
     transition-duration: 0;
     transition-delay: var(--desc-show-delay);

@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #343434;
+    --selected-bg-color: #2b2b2b;
+}
+
+#menu-apps {
+    position: absolute;
+    margin-top: 500px;
+    width: 320px;
+    height: 430px;
+    right: 10px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    visibility: hidden;
+}
+#menu-apps::-webkit-scrollbar {
+    width: 14px;
+}
+#menu-apps::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+    border-radius: 20px;
+    border: 3px solid var(--bg-color);
+}
+
+#menu-apps__section1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--bg-color);
+    margin-top: 5px;
+    padding: 8px 0 8px 8px;
+}
+
+.menu-apps__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0 10px 0;
+    margin: 10px 0 0 15px;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    width: 25%;
+}
+.menu-apps__item-name {
+    background-color: var(--bg-color);
+}
+.menu-apps__item-img {
+    background-color: var(--bg-color);
+    height: 37px;
+    width: 37px;
+    margin-bottom: 12px;
+}
+
+.menu-apps__item:hover {
+    background-color: var(--selected-bg-color);
+}
+.menu-apps__item:hover .menu-apps__item-name{
+    background-color: var(--selected-bg-color);
+}
+.menu-apps__item:hover .menu-apps__item-img{
+    background-color: var(--selected-bg-color);
+}
+
+.menu-apps__section-separator {
+    height: 2px;
+    background-color: #797979;
+}
+
+#menu-apps__section2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--bg-color);
+    padding: 0 8px 8px 8px;
+}
