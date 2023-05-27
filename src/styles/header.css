@@ -40,14 +40,14 @@
     width: 40px;
 }
 .top-nav__img-options {
-    background-color: #00000000; /*Necessary to make transparent image parts make detected as transparent by browser (rrggbbAA).*/
+    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 16px;
 }
 .top-nav__img-space {
     margin-right: 5px;
 }
 .top-nav__img-profile {
-    background-color: #00000000; /*Necessary to make transparent image parts make detected as transparent by browser (rrggbbAA).*/
+    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 35px;
 }
 .top-nav__margin-right {
