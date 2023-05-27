@@ -57,6 +57,7 @@
     border-radius: 20px;
     box-shadow: 0 0 0 1px var(--shadow-color);
     background-color: var(--shadow-color);
+    cursor: pointer;
 }
 .top-nav__menu-apps-button:focus .top-nav__menu-apps-desc{
     visibility: hidden;
@@ -104,6 +105,7 @@
     border-radius: 20px;
     box-shadow: 0 0 0 1px var(--shadow-color);
     background-color: var(--shadow-color);
+    cursor: pointer;
 }
 .top-nav__menu-profile-img {
     background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/

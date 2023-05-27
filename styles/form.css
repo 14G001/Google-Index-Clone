@@ -13,6 +13,7 @@
     margin: 0;
     font-weight: 100;
     font-family: sans-serif;
+    cursor: default;
 }
 
 
@@ -123,4 +124,5 @@
 }
 .form__search-way-opt:hover {
     border-color: #676767;
+    cursor: pointer;
 }
