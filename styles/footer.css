@@ -24,6 +24,7 @@
     line-height: 3.3;
 }
 
+
 #footer__contact-left {
     background-color: var(--footer-background-color);
 }
@@ -36,6 +37,7 @@
 .footer__contact-left-opt:hover {
     text-decoration: underline;
 }
+
 
 #footer__contact-right {
     text-decoration: none;
