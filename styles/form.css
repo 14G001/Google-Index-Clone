@@ -1,4 +1,4 @@
-.form {
+#form {
     display: flex;
     width: 100vw;
     margin-top: 18.2vh;
@@ -8,7 +8,7 @@
 }
 
 
-.form__google-logo {
+#form__google-logo {
     font-size: 90px;
     margin: 0;
     font-weight: 100;
@@ -17,26 +17,25 @@
 
 
 :root { --selected-border-color: #3b3b3b; }
-.form__input {
+#form__input {
     display: flex;
-    border-color: #595959;
+    border: 1px double #595959;
     border-radius: 25px;
-    border-style: double;
-    border-width: 1px;
     width: 590px;
     height: 47px;
     margin-top: 28px;
     justify-content: center;
     align-items: center;
 }
-.form__input:hover {
+#form__input:hover {
     border-color: var(--selected-border-color);
     background-color: var(--selected-border-color);
 }
-.form__input:focus-within {
+#form__input:focus-within {
     border-color: var(--selected-border-color);
     background-color: var(--selected-border-color);
 }
+
 
 :root { --img-size: 20px; }
 .form__input-img-mag-glass {
@@ -64,16 +63,15 @@
 }
 
 
-.form__search-way {
+:root { --search-way-bg: #383838; }
+#form__search-way {
     margin-top: 29px;
 }
 .form__search-way-opt {
     font-size: 14px;
-    background-color: #383838;
+    background-color: var(--search-way-bg);
     border-radius: 5px;
-    border: 1px;
-    border-color: #000;
-    border-style: solid;
+    border: 1px solid var(--search-way-bg);
     margin: 0 3px;
     padding: 10px 17px;
 }

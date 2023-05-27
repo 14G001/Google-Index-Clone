@@ -1,4 +1,4 @@
-.top-nav {
+#top-nav {
     display: flex;
     justify-content: right;
     height: 60px;
@@ -6,7 +6,7 @@
 }
 
 
-.top-nav__links {
+#top-nav__links {
     margin: auto 0;
 }
 .top-nav__item {
@@ -19,34 +19,69 @@
 }
 
 
-.top-nav__menu {
+#top-nav__menus {
     display: flex;
     margin: auto 0;
     margin-left: 8px;
 }
-.top-nav__img {
+
+:root {
+    --shadow-color: #353535;
+    --desc-bg-color: #494949;
+}
+#top-nav__menu-options {
     display: flex;
     height: 40px;
     width: 40px;
     justify-content: center;
     align-items: center;
 }
-:root { --shadow-color: #353535 }
-.top-nav__img:hover {
+#top-nav__menu-options:hover {
     border-radius: 20px;
     box-shadow: 0 0 0 1px var(--shadow-color);
     background-color: var(--shadow-color);
-    height: 40px;
-    width: 40px;
 }
-.top-nav__img-options {
+.top-nav__menu-options-img {
     background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 16px;
 }
-.top-nav__img-space {
+.top-nav__menu-options-desc {
+    position: absolute;
+    margin-top: 70px;
+    background-color: var(--desc-bg-color);
+    font-size: 12px;
+    font-family: Arial;
+    letter-spacing: 1px;
+    border: 5px solid var(--desc-bg-color); 
+    border-radius: 5px;
+    visibility: hidden;
+}
+#top-nav__menu-options:hover .top-nav__menu-options-desc{
+    transition: visibility;
+    transition-duration: 0;
+    transition-delay: 0.5s;
+    visibility: visible;
+}
+
+
+.top-nav__menu-space {
     margin-right: 5px;
 }
-.top-nav__img-profile {
+
+
+#top-nav__menu-profile {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+#top-nav__menu-profile:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px var(--shadow-color);
+    background-color: var(--shadow-color);
+}
+.top-nav__menu-profile-img {
     background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
     height: 35px;
 }
