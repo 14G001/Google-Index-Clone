@@ -13,7 +13,7 @@
     border-radius: 5px;
     overflow: hidden;
     overflow-y: scroll;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 #menu-apps::-webkit-scrollbar {
     width: 14px;
@@ -24,29 +24,35 @@
     border: 3px solid var(--bg-color);
 }
 
-#menu-apps__section1 {
+#menu-apps__section {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--bg-color);
-    margin-top: 5px;
-    padding: 8px 0 8px 8px;
+    padding: 8px 0 8px 0;
 }
 
-.menu-apps__item {
+#menu-apps__section a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 18px 0 10px 0;
-    margin: 10px 0 0 15px;
+    margin: 10px 0 0 20px;
     background-color: var(--bg-color);
     border-radius: 5px;
-    width: 25%;
+    width: 26%;
+    height: 100px;
     text-decoration: none;
 }
+
 .menu-apps__item-name {
     background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+    white-space: nowrap; /* Remove new lines */
+    overflow: hidden; /* Hide text over div area */
+    text-overflow: ellipsis; /* Add 3 points at the end of the text area limit in case of exceed */
 }
+
 .menu-apps__item-img {
     background-color: var(--bg-color);
     height: 37px;
@@ -54,13 +60,15 @@
     margin-bottom: 12px;
 }
 
-.menu-apps__item:hover {
+#menu-apps__section a:hover {
     background-color: var(--selected-bg-color);
 }
-.menu-apps__item:hover .menu-apps__item-name{
+#menu-apps__section a:hover .menu-apps__item-name{
     background-color: var(--selected-bg-color);
+    white-space: pre-wrap;
+    overflow: visible;
 }
-.menu-apps__item:hover .menu-apps__item-img{
+#menu-apps__section a:hover .menu-apps__item-img{
     background-color: var(--selected-bg-color);
 }
 
@@ -69,12 +77,6 @@
     background-color: #797979;
 }
 
-#menu-apps__section2 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--bg-color);
-    padding: 0 8px 8px 8px;
-}
 
 #menu-apps__footer {
     background-color: var(--bg-color);
@@ -87,4 +89,8 @@
     letter-spacing: 1.1px;
     font-family: Arial;
     display: flex;
+    text-decoration: none;
+}
+#menu-apps__footer:hover {
+    background-color: #5b5b5b;
 }
