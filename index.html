@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="styles/props/global/main.css">
         <link rel="stylesheet" type="text/css" href="styles/props/header.css">
         <link rel="stylesheet" type="text/css" href="styles/props/menu/apps.css">
+        <link rel="stylesheet" type="text/css" href="styles/props/menu/profile.css">
         <link rel="stylesheet" type="text/css" href="styles/props/form.css">
         <link rel="stylesheet" type="text/css" href="styles/props/footer.css">
     </head>
@@ -26,7 +27,7 @@
                         </button>
                         <div id="menu-apps">
                             <!-- TODO: Create a script to add every menu app automatically with its respective section -->
-                            <div id="menu-apps__section">
+                            <div class="menu-apps__section">
                                 <a href="">
                                     <img class="menu-apps__item-img" src="images/apps/account.png">
                                     <div class="menu-apps__item-name">Cuenta</div>
@@ -94,7 +95,7 @@
                             </div>
                             <div class="menu-apps__section-separator">
                             </div>
-                            <div id="menu-apps__section">
+                            <div class="menu-apps__section">
                                 <a href="">
                                     <img class="menu-apps__item-img" src="images/apps/noimg.png">
                                     <div class="menu-apps__item-name">Google Finance</div>
@@ -176,11 +177,43 @@
                     <div class="top-nav__menu-space">
                     </div>
                     <div id="top-nav__menu-profile">
-                        <img class="top-nav__menu-profile-img" src="images/profile.png">
-                        <div class="top-nav__menu-profile-desc">
-                            <p>Cuenta de Google</p>
-                            <p class="top-nav__menu-profile-desc-info">Todo with JavaScript: User Full Name</p>
-                            <p class="top-nav__menu-profile-desc-info">Todo with JavaScript: Mail Adress</p>
+                        <button class="top-nav__menu-profile-button">
+                            <img class="top-nav__menu-profile-img" src="images/profile.png">
+                            <div class="top-nav__menu-profile-desc">
+                                <p>Cuenta de Google</p>
+                                <p class="top-nav__menu-profile-desc-info">Todo with JavaScript: User Full Name</p>
+                                <p class="top-nav__menu-profile-desc-info">Todo with JavaScript: Mail Adress</p>
+                            </div>
+                        </button>
+                        <div id="menu-profile">
+                            <div class="menu-profile__account">
+                                <div class="menu-profile__account-data">
+                                    <div class="menu-profile__account-data-img">
+                                        <img class="menu-profile__account-data-img-usr-img" src="images/profile.png">
+                                        <img class="menu-profile__account-data-img-take-photo" src="">
+                                    </div>
+                                    <div class="menu-profile__account-data-usr">
+                                        <p class="menu-profile__account-data-usr-name">Your Username</p>
+                                        <p class="menu-profile__account-data-usr-mail">Your Mail Adress</p>
+                                    </div>
+                                </div>
+                                <a class="menu-profile__account-manage" href="">Administrar tu cuenta de Google</a>
+                                <div class="menu-profile__account-separator">
+                                </div>
+                                <a class="menu-profile__add-account" href="">
+                                    <img class="menu-profile__add-account-img" src="images/profile/add-account.png">
+                                    <div class="menu-profile__add-account-txt">Agregar otra cuenta</div>
+                                </a>
+                            </div>
+                            <a class="menu-profile__log-out" href="">
+                                <img class="menu-profile__log-out-img" src="images/profile/log-out.png">
+                                <div class="menu-profile__log-out-txt">Salir</div>
+                            </a>
+                            <div id="menu-profile__footer">
+                                <a class="menu-profile__footer-item" href="https://policies.google.com/privacy">Política de Privacidad</a>
+                                <div class="menu-profile__footer-separator">•</div>
+                                <a class="menu-profile__footer-item" href="https://policies.google.com/terms">Condiciones del Servicio</a>
+                            </div>
                         </div>
                     </div>
                     <div class="top-nav__margin-right">
@@ -200,8 +233,8 @@
                             <div class="form__input-mic-desc">Búsqueda por voz</div>
                         </div>
                         <div class="form__input-camera">
-                        <img class="form__input-camera-img" src="images/camera.png">
-                        <div class="form__input-camera-desc">Búsqueda por imagen</div>
+                            <img class="form__input-camera-img" src="images/camera.png">
+                            <div class="form__input-camera-desc">Búsqueda por imagen</div>
                         </div>
                     </div>
                     <div id="form__search-way">

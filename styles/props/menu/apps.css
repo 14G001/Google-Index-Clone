@@ -7,7 +7,7 @@
     width: 320px;
     height: 430px;
     right: 10px;
-    background-color: var(--bg-color);
+    background-color: var(--apps-bg-color);
     border-radius: 5px;
     overflow: hidden;
     overflow-y: scroll;
@@ -20,24 +20,24 @@
 #menu-apps::-webkit-scrollbar-thumb {
     background-color: #5b5b5b;
     border-radius: 20px;
-    border: 3px solid var(--bg-color);
+    border: 3px solid var(--apps-bg-color);
 }
 
-#menu-apps__section {
+.menu-apps__section {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--bg-color);
+    background-color: var(--apps-bg-color);
     padding: 8px 0 8px 0;
 }
 
-#menu-apps__section a {
+.menu-apps__section a {
     background-color: var(--transparent-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 18px 0 10px 0;
     margin: 10px 0 0 20px;
-    background-color: var(--bg-color);
+    background-color: var(--apps-bg-color);
     border-radius: 5px;
     width: 26%;
     height: 100px;
@@ -54,16 +54,16 @@
 }
 
 .menu-apps__item-img {
-    background-color: var(--bg-color);
+    background-color: var(--apps-bg-color);
     height: 37px;
     width: 37px;
     margin-bottom: 12px;
 }
 
-#menu-apps__section a:hover {
-    background-color: var(--selected-bg-color);
+.menu-apps__section a:hover {
+    background-color: #1d1d1d;
 }
-#menu-apps__section a:hover .menu-apps__item-name{
+.menu-apps__section a:hover .menu-apps__item-name{
     white-space: pre-wrap;
     overflow: visible;
 }
@@ -75,7 +75,7 @@
 
 
 #menu-apps__footer {
-    background-color: var(--bg-color);
+    background-color: var(--apps-bg-color);
     margin: 10px auto 20px auto;
     padding: 10px;
     border: 1px solid #797979;

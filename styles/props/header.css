@@ -31,27 +31,33 @@
 
 
 #top-nav__menu-apps,
-.top-nav__menu-apps-button ,
-#top-nav__menu-profile {
+.top-nav__menu-apps-button,
+#top-nav__menu-profile,
+.top-nav__menu-profile-button {
     display: flex;
     height: 40px;
     width: 40px;
     justify-content: center;
     align-items: center;
 }
-.top-nav__menu-apps-button {
+.top-nav__menu-apps-button,
+.top-nav__menu-profile-button {
     border: none;
 }
 
 #top-nav__menu-apps:focus-within .top-nav__menu-apps-desc,
-.top-nav__menu-apps-button:focus .top-nav__menu-apps-desc{
+#top-nav__menu-profile:focus-within .top-nav__menu-profile-desc,
+#top-nav__menu-profile:focus-within .top-nav__menu-profile-desc-info{
     visibility: hidden;
 }
 #top-nav__menu-apps:focus-within #menu-apps,
-.top-nav__menu-apps-button:focus #menu-apps{
+.top-nav__menu-apps-button:focus #menu-apps,
+#top-nav__menu-profile:focus-within #menu-profile,
+.top-nav__menu-profile-button:focus #menu-profile{
     visibility: visible;
 }
-.top-nav__menu-apps-button:hover {
+.top-nav__menu-apps-button:hover,
+.top-nav__menu-profile-button:hover {
     border-radius: 20px;
     box-shadow: 0 0 0 1px var(--shadow-color);
     background-color: var(--shadow-color);
@@ -74,7 +80,7 @@
     visibility: hidden;
 }
 .top-nav__menu-apps-button:hover .top-nav__menu-apps-desc,
-#top-nav__menu-profile:hover .top-nav__menu-profile-desc{
+#top-nav__menu-profile-button:hover .top-nav__menu-profile-desc{
     transition: visibility;
     transition-duration: 0;
     transition-delay: var(--desc-show-delay);
@@ -86,12 +92,6 @@
 }
 
 
-#top-nav__menu-profile:hover {
-    border-radius: 20px;
-    box-shadow: 0 0 0 1px var(--shadow-color);
-    background-color: var(--shadow-color);
-    cursor: pointer;
-}
 .top-nav__menu-profile-img {
     background-color: var(--transparent-color);
     height: 35px;
@@ -109,6 +109,7 @@
     box-sizing: content-box;
     top: 55px;
     right: 10px;
+    text-align: left;
     visibility: hidden;
 }
 .top-nav__menu-profile-desc p {
@@ -117,6 +118,8 @@
 .top-nav__menu-profile-desc-info {
     color: #ababab;
 }
+
+
 .top-nav__margin-right {
     margin-right: 15px;
 }

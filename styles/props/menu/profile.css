@@ -1,0 +1,145 @@
+@import "../../vars/menu/apps.css";
+@import "../../vars/global/transparent.css";
+@import "../../vars/menu/profile.css";
+
+#menu-profile {
+    position: absolute;
+    margin-top: 360px;
+    width: 390px;
+    height: max-content;
+    right: 10px;
+    background-color: var(--prof-bg-color);
+    border-radius: var(--prof-border-radius);
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+
+.menu-profile__account {
+    margin: 8px 8px 0 8px;
+    border-radius: var(--prof-border-radius);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.menu-profile__account-data {
+    border-radius: var(--prof-border-radius);
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    width: 100%;
+}
+.menu-profile__account-data-img {
+    height: 100%;
+    background-color: var(--transparent-color);
+    margin: 20px 12px 15px 16px;
+}
+.menu-profile__account-data-img-usr-img {
+    height: 70px;
+}
+.menu-profile__account-data-img-take-photo {
+    position: absolute;
+}
+.menu-profile__account-data-usr {
+    background-color: var(--transparent-color);
+    width: 300px;
+    margin-top: 40px;
+}
+.menu-profile__account-data-usr-name {
+    color: var(--prof-txt-color);
+}
+.menu-profile__account-data-usr-mail {
+    font-size: 11px;
+    color: #d2d2d2;
+}
+
+
+.menu-profile__account-manage {
+    text-decoration: none;
+    width: fit-content;
+    margin: 2px 0 0 95px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 7px solid var(--transparent-color);
+    border-radius: 10px;
+    padding: 0 10px;    
+    outline: 1px solid #a8a8a8;
+    color: var(--prof-txt-color);
+}
+
+
+.menu-profile__account-separator {
+    background-color: var(--prof-bg-color);
+    margin: 30px 0 0 0;
+    height: 3px;
+}
+
+.menu-profile__log-out,
+.menu-profile__add-account {
+    background-color: var(--transparent-color);
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.menu-profile__add-account {
+    border-radius: 0 0 var(--prof-border-radius) var(--prof-border-radius);
+}
+.menu-profile__add-account:hover,
+.menu-profile__log-out:hover,
+.menu-profile__footer-item:hover,
+.menu-profile__account-manage:hover {
+    background-color: #5c5c5c;
+}
+.menu-profile__footer-item:hover {
+    outline: 3px solid #5c5c5c;
+}
+.menu-profile__add-account-img,
+.menu-profile__log-out-img {
+    background-color: var(--transparent-color);
+    height: 24px;
+}
+.menu-profile__add-account-img {
+    margin: var(--prof-opt-space) 28px var(--prof-opt-space) 42px;
+}
+.menu-profile__add-account-txt,
+.menu-profile__log-out-txt {
+    background-color: var(--transparent-color);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--prof-txt-color);
+}
+
+
+.menu-profile__log-out {
+    height: 100%;
+}
+.menu-profile__log-out-img {
+    margin: var(--prof-opt-space) 30px var(--prof-opt-space) 50px;
+}
+.menu-profile__log-out-txt {
+    background-color: var(--transparent-color);
+}
+
+
+#menu-profile__footer {
+    background-color: var(--transparent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-profile__footer-separator {
+    background-color: var(--transparent-color);
+    margin: 10px;
+}
+
+.menu-profile__footer-item {
+    text-decoration: none;
+    color: var(--prof-txt-color);
+    padding: 0 3px;
+    border-radius: 1px;
+}
