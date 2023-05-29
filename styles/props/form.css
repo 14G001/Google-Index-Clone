@@ -1,3 +1,7 @@
+@import "../vars/form.css";
+@import "../vars/global/transparent.css";
+
+
 #form {
     display: flex;
     width: 100vw;
@@ -17,7 +21,7 @@
 }
 
 
-:root { --selected-border-color: #3b3b3b; }
+
 #form__input {
     display: flex;
     border: 1px double #595959;
@@ -28,26 +32,22 @@
     justify-content: center;
     align-items: center;
 }
-#form__input:hover {
-    border-color: var(--selected-border-color);
-    background-color: var(--selected-border-color);
-}
+#form__input:hover,
 #form__input:focus-within {
     border-color: var(--selected-border-color);
     background-color: var(--selected-border-color);
 }
 
 
-:root { --img-size: 20px; }
 .form__input-mag-glass-img {
-    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
+    background-color: var(--transparent-color);
     height: 15px;
     margin-right: 15px;
 }
 
 .form__input-entry {
-    border-color: #0000;
-    background-color: #0000;
+    border-color: var(--transparent-color);
+    background-color: var(--transparent-color);
     margin-right: 10px;
     width: 450px;
 }
@@ -55,17 +55,17 @@
     outline: 0;
 }
 
-:root { --input-desc-bg-color: #2d2d2d; }
 .form__input-mic {
-    background-color: #0000;
+    background-color: var(--transparent-color);
 }
 .form__input-mic-img {
-    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
+    background-color: var(--transparent-color);
     height: var(--img-size);
     margin-right: 20px;
     margin-top: 5px;
 }
-.form__input-mic-desc {
+.form__input-mic-desc,
+.form__input-camera-desc {
     position: absolute;
     font-size: 11px;
     font-weight: 700;
@@ -76,7 +76,8 @@
     color: #a9a9a9;
     visibility: hidden;
 }
-.form__input-mic:hover .form__input-mic-desc{
+.form__input-mic:hover .form__input-mic-desc,
+.form__input-camera:hover .form__input-camera-desc {
     transition: visibility;
     transition-duration: 0;
     transition-delay: 0.2s;
@@ -84,33 +85,15 @@
 }
 
 .form__input-camera {
-    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
+    background-color: var(--transparent-color);
     margin-top: 5px;
 }
 .form__input-camera-img {
-    background-color: #0000; /*Necessary to make transparent image parts make detected as transparent by browser (rgbA).*/
+    background-color: var(--transparent-color);
     height: var(--img-size);
 }
-.form__input-camera-desc {
-    position: absolute;
-    font-size: 11px;
-    font-weight: 700;
-    margin: 12px 0 0 -55px;
-    background-color: var(--input-desc-bg-color);
-    border: 7px solid var(--input-desc-bg-color);
-    outline: 1px solid #5b5b5b;
-    color: #a9a9a9;
-    visibility: hidden;
-}
-.form__input-camera:hover .form__input-camera-desc{
-    transition: visibility;
-    transition-duration: 0;
-    transition-delay: 0.2s;
-    visibility: visible;
-}
 
 
-:root { --search-way-bg: #383838; }
 #form__search-way {
     margin-top: 29px;
 }

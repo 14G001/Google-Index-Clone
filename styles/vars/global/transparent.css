@@ -1,0 +1,4 @@
+/*Necessary to make transparent image parts be detected as transparent by browser (rgbA).*/
+:root {
+    --transparent-color: #0000;
+}
