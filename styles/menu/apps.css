@@ -1,6 +1,3 @@
-@import "../../vars/menu/apps.css";
-@import "../../vars/global/transparent.css";
-
 #menu-apps {
     position: absolute;
     margin-top: 500px;

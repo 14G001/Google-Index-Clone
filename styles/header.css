@@ -1,7 +1,3 @@
-@import "../vars/header.css";
-@import "../vars/global/transparent.css";
-
-
 #top-nav {
     display: flex;
     justify-content: right;
@@ -59,8 +55,8 @@
 .top-nav__menu-apps-button:hover,
 .top-nav__menu-profile-button:hover {
     border-radius: 20px;
-    box-shadow: 0 0 0 1px var(--shadow-color);
-    background-color: var(--shadow-color);
+    box-shadow: 0 0 0 1px var(--header-shadow-color);
+    background-color: var(--header-shadow-color);
     cursor: pointer;
 }
 
@@ -71,11 +67,11 @@
 .top-nav__menu-apps-desc {
     position: absolute;
     margin-top: 70px;
-    background-color: var(--desc-bg-color);
+    background-color: var(--header-desc-bg-color);
     font-size: 12px;
     font-family: Arial;
     letter-spacing: 1px;
-    border: 5px solid var(--desc-bg-color); 
+    border: 5px solid var(--header-desc-bg-color); 
     border-radius: 5px;
     visibility: hidden;
 }
@@ -83,7 +79,7 @@
 #top-nav__menu-profile-button:hover .top-nav__menu-profile-desc{
     transition: visibility;
     transition-duration: 0;
-    transition-delay: var(--desc-show-delay);
+    transition-delay: 0.5s;
     visibility: visible;
 }
 
@@ -98,12 +94,12 @@
 }
 .top-nav__menu-profile-desc {
     position: absolute;
-    background-color: var(--desc-bg-color);
+    background-color: var(--header-desc-bg-color);
     font-size: 11.8px;
     font-family: Arial;
     letter-spacing: 0.9px;
     line-height: 1.2;
-    border: 5px solid var(--desc-bg-color); 
+    border: 5px solid var(--header-desc-bg-color); 
     border-radius: 5px;
     width: max-content;
     box-sizing: content-box;

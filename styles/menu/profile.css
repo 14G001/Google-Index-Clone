@@ -1,7 +1,3 @@
-@import "../../vars/menu/apps.css";
-@import "../../vars/global/transparent.css";
-@import "../../vars/menu/profile.css";
-
 #menu-profile {
     position: absolute;
     margin-top: 360px;
