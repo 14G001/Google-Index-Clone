@@ -1,7 +1,7 @@
 #form {
     display: flex;
     width: 100vw;
-    margin-top: 18.2vh;
+    margin-top: 185px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -39,6 +39,7 @@
     background-color: var(--transparent-color);
     height: 15px;
     margin-right: 15px;
+    margin-left: 15px;
 }
 
 .form__input-entry {
@@ -59,11 +60,15 @@
 .form__input-camera-img {
     background-color: var(--transparent-color);
     height: 20px;
+    min-width: 20px;
     cursor: pointer;
 }
 .form__input-mic-img {
     margin-right: 20px;
     margin-top: 5px;
+}
+.form__input-camera-img {
+    margin-right: 15px;
 }
 .form__input-mic-desc,
 .form__input-camera-desc {
@@ -105,4 +110,30 @@
 .form__search-way-opt:hover {
     border-color: #676767;
     cursor: pointer;
+}
+
+@media (width < 640px) {
+    #form__input {
+        width: 92vw;
+    }
+}
+@media (650px < height < 855px) {
+    #form {
+        position: fixed;
+        bottom: 360px;
+    }
+}
+@media (500px < height < 651px) {
+    #form {
+        margin: 0 0 15px;
+    }
+}
+@media (height < 501px) {
+    body {
+        overflow: visible;
+        overflow-x: hidden;
+    }
+    #form {
+        margin: 0 0 15px;
+    }
 }

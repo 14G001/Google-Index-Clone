@@ -4,14 +4,15 @@
     bottom: 50px;
     display: flex;
     flex-direction: column;
-    visibility: hidden;
     background-color: var(--transparent-color);
+    visibility: hidden;
 }
 .menu-preferences__opt,
 .menu-preferences__theme {
     line-height: 2.2;
     text-align: left;
     color: #d4d4d4;
+    text-decoration: none;
 }
 .menu-preferences__separator {
     width: 100%;
