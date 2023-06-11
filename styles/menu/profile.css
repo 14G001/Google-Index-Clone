@@ -34,10 +34,16 @@
     margin: 20px 12px 15px 16px;
 }
 .menu-profile__account-data-img-usr-img {
-    height: 70px;
+    height: 65px;
+    width: 70px;
 }
 .menu-profile__account-data-img-take-photo {
     position: absolute;
+    display: flex;
+    background-color: var(--transparent-color);
+    height: 32px;
+    left: 60px;
+    top: 67px;
 }
 .menu-profile__account-data-usr {
     background-color: var(--transparent-color);
